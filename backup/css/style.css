@@ -108,3 +108,8 @@
             border-bottom: none;
             margin: 0;
         }
+
+        .articles {
+            display: grid;
+            grid-template-columns: repeat(2, );
+        }
