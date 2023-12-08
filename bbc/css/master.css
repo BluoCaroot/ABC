@@ -20,7 +20,7 @@ body {
     box-shadow: rgba(255, 255, 255, .15) 0 0.0625rem 0;
     background: #000;
     position: relative;
-    z-index: 90;
+    min-height: 4rem;
 }
 
 .orbit-nav {
@@ -33,9 +33,10 @@ body {
     margin: 0 5%;
     position: relative;
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     line-height: 1px;
+    height: 100%;
+
 }
 
 .orbit-logo {
@@ -67,6 +68,7 @@ body {
 
 .orbit-nav-links {
     width: 100%;
+    height: 4rem;
 }
 
 .orbit-nav-links ul {
@@ -75,6 +77,7 @@ body {
     justify-content: space-evenly;
     position: relative;
     width: 100%;
+    height: 100%;
     padding: 0;
     list-style-type: none;
     font-size: 13px;
@@ -82,15 +85,18 @@ body {
 }
 
 .orbit-nav-links ul li {
-
     margin: 0 0.5rem;
     padding: 0.5rem 0;
     position: relative;
     text-transform: uppercase;
+    height: 100%;
 }
 
 .orbit-nav-links ul li a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     line-height: 4rem;
@@ -100,6 +106,7 @@ body {
     margin: 0;
     font: inherit;
     color: #fff;
+    position: relative;
 }
 
 .orbit-nav-links ul li a span {
@@ -107,10 +114,48 @@ body {
     text-decoration: none;
     position: relative;
     bottom: -0.0625rem;
+    width: 100%;
 }
 
 .orbit-nav-links ul li a span::after {
-    background-color: #fff;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.125rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
     transition: width .2s, opacity .2s;
     transition-timing-function: cubic-bezier(.75, 0, .15, 1);
+}
+
+
+.orbit-nav-links ul li:hover a span::after {
+    transition: width .2s, opacity .2s;
+    transition-timing-function: cubic-bezier(.75, 0, .15, 1);
+    opacity: 1;
+    width: 100%;
+    cursor: pointer;
+}
+
+.orbit-nav-links ul li:hover .home span::after {
+    background-color: #fff;
+}
+
+.orbit-nav-links ul li:hover .political span::after {
+    background-color: #eb0000;
+}
+
+.orbit-nav-links ul li:hover .health span::after {
+    background-color: #af0;
+}
+
+.orbit-nav-links ul li:hover .tech span::after {
+    background-color: #0068ff;
+}
+
+.orbit-nav-links ul li:hover .sport span::after {
+    background-color: #ffd230;
 }
