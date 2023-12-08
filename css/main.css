@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    position: relative;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -21,6 +22,13 @@ header {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+}
+
+.stick {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .main-nav {
@@ -69,7 +77,7 @@ main .categories {
     flex-wrap: wrap;
 }
 
-.container {
+.main-container {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -85,16 +93,22 @@ article p {
     line-height: 1.5;
 }
 
-.container .main-news {
+.main-container .main-news {
     grid-column: span 2;
 }
 
-.container article {
+section article {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     width: 100%;
     margin-bottom: 2rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
 }
 
 
