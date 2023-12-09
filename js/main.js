@@ -1,11 +1,13 @@
-function updateDateTime() {
-    var currentDate = new Date();
-    var datetimeElement = document.getElementById('dateTime');
-    datetimeElement.innerHTML = 'Current Date and Time: ' + currentDate.toLocaleString();
+function formatDate(date) {
+    const options = { weekday: 'long', day: 'numeric', month: 'long' };
+    return new Date(date).toLocaleDateString('en-US', options);
 }
 
-// Update the date and time every second
-setInterval(updateDateTime, 1000);
+// Get the current date
+const currentDate = new Date();
 
-// Initial call to set the initial date and time
-updateDateTime();
+// Format the date
+const formattedDate = formatDate(currentDate);
+
+// Display the formatted date in the HTML element with id "dateContainer"
+document.getElementById('main-container-title-h2').appendChild(document.createTextNode(formattedDate));
