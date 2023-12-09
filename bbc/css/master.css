@@ -2,6 +2,10 @@
 
 :root {
     --font-family: 'Roboto', sans-serif;
+    --news-color: #eb0000;
+    --health-color: #149edc;
+    --tech-color: #0068ff;
+    --sport-color: #ffd230;
 }
 
 * {
@@ -21,21 +25,30 @@ body {
     background: #000;
     position: relative;
     min-height: 4rem;
+    width: 100%;
+}
+
+.orbit-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .orbit-nav {
     min-height: 4rem;
-
+    width: 100%;
 }
 
 .orbit-nav-container {
     min-height: 4rem;
-    margin: 0 5%;
+    margin: 0 auto;
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     line-height: 1px;
     height: 100%;
+    width: 85%;
 
 }
 
@@ -90,6 +103,7 @@ body {
     position: relative;
     text-transform: uppercase;
     height: 100%;
+    cursor: pointer;
 }
 
 .orbit-nav-links ul li a {
@@ -127,14 +141,12 @@ body {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: width .2s, opacity .2s;
-    transition-timing-function: cubic-bezier(.75, 0, .15, 1);
+    transition: width .5s, opacity .5s;
 }
 
 
 .orbit-nav-links ul li:hover a span::after {
-    transition: width .2s, opacity .2s;
-    transition-timing-function: cubic-bezier(.75, 0, .15, 1);
+    transition: width .5s, opacity .5s;
     opacity: 1;
     width: 100%;
     cursor: pointer;
@@ -144,18 +156,216 @@ body {
     background-color: #fff;
 }
 
-.orbit-nav-links ul li:hover .political span::after {
-    background-color: #eb0000;
+.orbit-nav-links ul li:hover .news span::after {
+    background-color: var(--news-color);
 }
 
 .orbit-nav-links ul li:hover .health span::after {
-    background-color: #af0;
+    background-color: var(--health-color);
 }
 
 .orbit-nav-links ul li:hover .tech span::after {
-    background-color: #0068ff;
+    background-color: var(--tech-color);
 }
 
 .orbit-nav-links ul li:hover .sport span::after {
-    background-color: #ffd230;
+    background-color: var(--sport-color);
+}
+
+.main-container {
+    padding-bottom: 1rem;
+    margin: 2rem auto;
+    width: 85%;
+}
+
+.main-container-title {
+    padding-bottom: 1rem;
+}
+
+.main-container .main-container-title h2 {
+    color: #8c8c8c;
+    text-align: right;
+    font-size: 1.375rem;
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+
+.main-container .main-container-title h2 span {
+    color: #4a4a4a;
+    font-weight: bold;
+    float: left;
+}
+
+.main-news,
+.main-health,
+.main-tech,
+.main-sport {
+    margin-bottom: 2rem;
+}
+
+.main-news .title-news,
+.main-health .title-health,
+.main-tech .title-tech,
+.main-sport .title-sport {
+    display: flex;
+    flex-direction: left;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.main-news .title-news a,
+.main-health .title-health a,
+.main-tech .title-tech a,
+.main-sport .title-sport a {
+    display: inline-block;
+    color: #4a4a4a;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.main-news .title-news a::before,
+.main-health .title-health a::before,
+.main-tech .title-tech a::before,
+.main-sport .title-sport a::before {
+    content: "";
+    margin-right: 0.5rem;
+    border-left: .250rem solid var(--news-color);
+    padding: 0;
+    width: 0;
+}
+
+.main-health .title-health a::before {
+    border-left: .250rem solid var(--health-color);
+}
+
+.main-tech .title-tech a::before {
+    border-left: .250rem solid var(--tech-color);
+}
+
+.main-sport .title-sport a::before {
+    border-left: .250rem solid var(--sport-color);
+}
+
+
+.main-news .title-news a:hover::before,
+.main-health .title-health a:hover::before,
+.main-tech .title-tech a:hover::before,
+.main-sport .title-sport a:hover::before {
+    transition: width .5s;
+    width: 1rem;
+}
+
+.main-news .title-news a:hover,
+.main-health .title-health a:hover,
+.main-tech .title-tech a:hover,
+.main-sport .title-sport a:hover {
+    color: var(--news-color);
+}
+
+.main-health .title-health a:hover {
+    color: var(--health-color);
+}
+
+.main-tech .title-tech a:hover {
+    color: var(--tech-color);
+}
+
+.main-sport .title-sport a:hover {
+    color: var(--sport-color);
+}
+
+
+
+.main-news-content,
+.main-health-content,
+.main-tech-content,
+.main-sport-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.main-news-item h3,
+.main-health-item h3,
+.main-tech-item h3,
+.main-sport-item h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    margin: 0.5rem 0;
+}
+
+.main-news-item p,
+.main-health-item p,
+.main-tech-item p,
+.main-sport-item p {
+    font-size: 1rem;
+    color: #4a4a4a;
+    margin-top: 0.5rem;
+    line-height: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.main-news-item-tag a,
+.main-health-item-tag a,
+.main-tech-item-tag a,
+.main-sport-item-tag a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-decoration: none;
+    margin-bottom: 1rem;
+
+}
+
+.main-news-item-tag a:hover,
+.main-health-item-tag a:hover,
+.main-tech-item-tag a:hover,
+.main-sport-item-tag a:hover {
+    color: var(--news-color);
+}
+
+.main-health-item-tag a:hover {
+    color: var(--health-color);
+}
+
+.main-tech-item-tag a:hover {
+    color: var(--tech-color);
+}
+
+.main-sport-item-tag a:hover {
+    color: var(--sport-color);
+}
+
+
+
+.main-news-item-tag a::before,
+.main-health-item-tag a::before,
+.main-tech-item-tag a::before,
+.main-sport-item-tag a::before {
+    content: "";
+    display: inline-block;
+    height: 0.75rem;
+    margin-right: 0.5rem;
+    border-left: .13125rem solid var(--news-color);
+    margin-top: 1rem;
+}
+
+.main-health-item-tag a::before {
+    border-left: .13125rem solid var(--health-color);
+}
+
+.main-tech-item-tag a::before {
+    border-left: .13125rem solid var(--tech-color);
+}
+
+.main-sport-item-tag a::before {
+    border-left: .13125rem solid var(--sport-color);
 }
