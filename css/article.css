@@ -20,54 +20,62 @@ body {
 }
 
 article {
-    max-width: 1250px;
-    margin: 20px auto;
-    flex: 1;
+    margin: 0 auto;
+    grid-area: article;
     padding: 20px;
-    border-radius: 40px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-article img
-{
     display: flex;
-    border-radius: 20px;
-    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article img {
+    display: flex;
     margin-bottom: 40px;
-    
+    width: 100%;
+    height: auto;
 }
-article h2
-{
-    font-size: 75px;
-}
-article p
-{
-    width: 90%;
-    font-size: 25px;
+
+article h2 {
+    font-size: 2rem;
     margin: auto;
     margin-bottom: 40px;
     margin-top: 20px;
 }
-main
-{
+
+article p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    text-justify: inter-word;
+}
+
+
+main {
     width: 85%;
     padding-bottom: 1rem;
     margin: 2rem auto;
-    display: flex;
-
-    
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 18.75rem;
+    grid-template-areas: "article aside";
+    grid-gap: 4vw;
 }
+
 main aside {
     grid-area: aside;
-    align-items: center;
-    flex-direction: column;
+    order: 2;
 }
-main aside img
-{
-    margin-top: 10px;
+
+main aside img {
     margin-bottom: 20px;
-    border-radius: 15px;
     margin-right: 15px;
+}
+
+main article div {
+    margin-bottom: 20px;
+    width: 90%;
 }
 
 .orbit-header-container {
@@ -78,20 +86,25 @@ main aside img
     min-height: 4rem;
     width: 100%;
 }
+
 .second-header-container {
     position: relative;
     min-height: 5rem;
     width: 100%;
 }
+
 .News {
     background-color: var(--news-color);
 }
+
 .Sport {
     background-color: var(--sport-color);
 }
+
 .Tech {
     background-color: var(--tech-color);
 }
+
 .Health {
     background-color: var(--health-color);
 }
@@ -118,6 +131,7 @@ main aside img
     height: 100%;
     width: 85%;
 }
+
 .second-nav-container {
     min-height: 4rem;
     margin: 0 auto;
@@ -141,6 +155,7 @@ main aside img
     display: block;
     position: relative;
     text-decoration: none;
+    max-width: 800px;
 }
 
 .orbit-nav-links {
@@ -169,6 +184,8 @@ main aside img
     height: 100%;
     cursor: pointer;
 }
+
+
 
 .orbit-nav-links ul li a {
     display: flex;
@@ -235,4 +252,3 @@ main aside img
 .orbit-nav-links ul li:hover .sport span::after {
     background-color: var(--sport-color);
 }
-
