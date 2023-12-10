@@ -22,7 +22,7 @@ body {
 article {
     max-width: 1250px;
     margin: 20px auto;
-    
+    flex: 1;
     padding: 20px;
     border-radius: 40px;
     background-color: #fff;
@@ -48,10 +48,17 @@ article p
     margin-bottom: 40px;
     margin-top: 20px;
 }
+main
+{
+    width: 85%;
+    padding-bottom: 1rem;
+    margin: 2rem auto;
+    display: flex;
+
+    
+}
 main aside {
     grid-area: aside;
-    display: flex;
-    position: absolute;
     align-items: center;
     flex-direction: column;
 }
@@ -60,7 +67,6 @@ main aside img
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 15px;
-    margin-left: 15px;
     margin-right: 15px;
 }
 
