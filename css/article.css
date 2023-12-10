@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --news-color: #eb0000;
+    --health-color: #149edc;
+    --tech-color: #0068ff;
+    --sport-color: #ffd230;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    font-size: 62.5%;
+}
+
+article {
+    max-width: 1250px;
+    margin: 20px auto;
+    
+    padding: 20px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+article img
+{
+    display: flex;
+    border-radius: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    
+}
+article h2
+{
+    font-size: 75px;
+}
+article p
+{
+    width: 90%;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+main aside {
+    grid-area: aside;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+}
+main aside img
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.orbit-header-container {
+    background-color: #fff;
+    box-shadow: rgba(255, 000, 000, .15) 0 0.0625rem 0;
+    background: #fff;
+    position: relative;
+    min-height: 4rem;
+    width: 100%;
+}
+.second-header-container {
+    position: relative;
+    min-height: 5rem;
+    width: 100%;
+}
+.News {
+    background-color: var(--news-color);
+}
+.Sport {
+    background-color: var(--sport-color);
+}
+.Tech {
+    background-color: var(--tech-color);
+}
+.Health {
+    background-color: var(--health-color);
+}
+
+.orbit-banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.orbit-nav {
+    min-height: 4rem;
+    width: 100%;
+}
+
+.orbit-nav-container {
+    min-height: 4rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1px;
+    height: 100%;
+    width: 85%;
+}
+.second-nav-container {
+    min-height: 4rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1px;
+    height: 100%;
+    width: 85%;
+
+}
+
+.orbit-logo {
+    order: -1;
+    margin-right: calc(1/8 * 1rem);
+}
+
+.orbit-logo a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.orbit-nav-links {
+    width: 100%;
+    height: 4rem;
+}
+
+.orbit-nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    list-style-type: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.orbit-nav-links ul li {
+    margin: 0 0.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+    text-transform: uppercase;
+    height: 100%;
+    cursor: pointer;
+}
+
+.orbit-nav-links ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    line-height: 4rem;
+    padding: 0 0.25rem;
+    text-decoration: inherit;
+    border: 0;
+    margin: 0;
+    font: inherit;
+    color: #000;
+    position: relative;
+}
+
+.orbit-nav-links ul li a span {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    bottom: -0.0625rem;
+    width: 100%;
+}
+
+.orbit-nav-links ul li a span::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.125rem;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: width .5s, opacity .5s;
+}
+
+
+.orbit-nav-links ul li:hover a span::after {
+    transition: width .5s, opacity .5s;
+    opacity: 1;
+    width: 100%;
+    cursor: pointer;
+}
+
+.orbit-nav-links ul li:hover .home span::after {
+    background-color: #000;
+}
+
+.orbit-nav-links ul li:hover .news span::after {
+    background-color: var(--news-color);
+}
+
+.orbit-nav-links ul li:hover .health span::after {
+    background-color: var(--health-color);
+}
+
+.orbit-nav-links ul li:hover .tech span::after {
+    background-color: var(--tech-color);
+}
+
+.orbit-nav-links ul li:hover .sport span::after {
+    background-color: var(--sport-color);
+}
+
