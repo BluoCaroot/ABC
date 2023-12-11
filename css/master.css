@@ -350,7 +350,9 @@ body {
     color: var(--sport-color);
 }
 
-
+a{
+    text-decoration: none;
+}
 
 .main-news-item-tag a::before,
 .main-health-item-tag a::before,
