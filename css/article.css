@@ -184,7 +184,9 @@ main article div {
     height: 100%;
     cursor: pointer;
 }
-
+a{
+    text-decoration: none;
+}
 
 
 .orbit-nav-links ul li a {
