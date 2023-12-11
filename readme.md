@@ -10,6 +10,7 @@ ramdan => health - tech
 
 deadline 13 / 12
 
-research 10 / 12 => start
+# Research
 
-tst
+each 2 topics (3 - 5) pages
+Introduction - Digital Firm - TPS - Conclusion - Presentation  => Moataz
