@@ -20,3 +20,5 @@ MIS - DSS => Amr
 ESS - Enterprise applications => Assem
 ERP - SCM => Ramadan
 CRM - KMS => Ayman
+
+# deadline 14 / 12
