@@ -62,21 +62,48 @@ main {
     grid-template-areas: "article aside";
     grid-gap: 4vw;
 }
-
 main aside {
     grid-area: aside;
     order: 2;
 }
 
+main aside .image-container {
+    position: relative;
+    display: inline-block;
+}
+
 main aside img {
-    margin-bottom: 20px;
-    margin-right: 15px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .image-text {
+    opacity: 1;
 }
 
 main article div {
     margin-bottom: 20px;
     width: 90%;
 }
+.orbit-logo a svg path {
+    fill: #000;
+}
+
 
 .orbit-header-container {
     background-color: #fff;
@@ -253,4 +280,10 @@ a{
 
 .orbit-nav-links ul li:hover .sport span::after {
     background-color: var(--sport-color);
+}
+
+
+.main-container-title-h2 span
+{
+    position: relative;
 }

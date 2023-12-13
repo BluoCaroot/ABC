@@ -15,8 +15,8 @@ deadline 13 / 12
 
 each 2 topics (3 - 5) pages
 Introduction - Digital Firm - TPS - Conclusion - Presentation  => Moataz & 7oka
-MIS -  Enterprise applications => Amr
-ESS - DSS => Assem
+MIS -  Enterprise applications => Assem
+ESS - DSS => Amr
 ERP - SCM => Ramadan
 CRM - KMS => Ayman
 
