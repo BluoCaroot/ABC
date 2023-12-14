@@ -36,12 +36,12 @@ export const map =
 {
     key1: 'health',
     key2: 5,
-    value: 'The Fed’s higher-for-longer strategy on interest rates is slowly crumbling. Welcome to higher-for-long-enough'
+    value: 'To keep pounds off, patients may need to continue taking weight loss drug, study suggests'
 },
 {
     key1: 'health',
     key2: 6,
-    value: 'Elon Musk is going down a conspiratorial rabbit hole and taking X with him'
+    value: 'Doctors should intervene to help children with obesity, task force draft says, but it doesn’t recommend surgery or meds'
 },
 {
     key1: 'news',
