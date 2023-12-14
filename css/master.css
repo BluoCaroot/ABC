@@ -275,6 +275,14 @@ body {
     color: var(--sport-color);
 }
 
+.main-news-content :hover,
+.main-tech-content  :hover,
+.main-health-content :hover,
+.main-sport-content :hover
+{
+    transform: scale(1.01);
+    
+}
 
 
 .main-news-content,

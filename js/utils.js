@@ -10,3 +10,27 @@ export function getRandomInt(min, max)
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
 }
+
+export const map = 
+[
+{
+    key1: 'heath',
+    key2: 1,
+    value: 'Could the most magical time of year be so full of loneliness, anger and stress?'
+},
+{
+    key1: 'heath',
+    key2: 2,
+    value: 'Being a nice person is not the same as being kind. Why the difference is so important'
+},
+{
+    key1: 'heath',
+    key2: 3,
+    value: 'Why most men don’t have enough close friends'
+},
+{
+    key1: 'heath',
+    key2: 4,
+    value: 'It’s not too late to get vaccinated, as the holidays – and respiratory virus season – ramp up'
+}
+]
