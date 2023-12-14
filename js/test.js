@@ -28,7 +28,7 @@ const num = file.split('.')[0]
 
 
 util.shuffleArray(arr)
-const urll = [], urll1 = []
+const urll = [], urll1 = [], keys = []
 for (let i = 0; i < 6; ++i)
 {
     const rand = util.getRandomInt(0, 3)
@@ -42,6 +42,7 @@ for (let i = 0; i < 6; ++i)
     
     urll.push(`../../../images/${value}/${arr[i]}.jpg`)
     urll1.push(`../../../articles/${value}/${arr[i]}.html`)
+    keys.push({key1: value, key2: arr[i]})
 
 }
 
@@ -49,6 +50,11 @@ for (let i = 1; i <= 6; ++i)
 {
     const x = document.getElementById(`${i}`)
     const y = document.getElementById(`a${i}`)
+    const z = document.getElementById(`t${i}`)
     x.src = urll[i - 1]
     y.href = urll1[i - 1]
+    z.innerText = util.map.filter((elem)=>
+    {
+        return (elem.key1 == keys[i - 1].key1 && elem.key2 == keys[i - 1].key2)
+    })[0].value
 }
