@@ -21,3 +21,7 @@ ERP - SCM => Ramadan
 CRM - KMS => Ayman
 
 # deadline 14 / 12
+
+
+
+## [Presentation](https://www.canva.com/design/DAF3AK63JsU/Y1G7mCZ0_Fs1xsuTYw7tkQ/edit?utm_content=DAF3AK63JsU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
