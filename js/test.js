@@ -40,7 +40,7 @@ for (let i = 0; i < 6; ++i)
         continue
     }
     
-    urll.push(`../../../images/${value}/${arr[i]}.jpg`)
+    urll.push(`../../images/${value}/${arr[i]}.jpg`)
     urll1.push(`../../../articles/${value}/${arr[i]}.html`)
     keys.push({key1: value, key2: arr[i]})
 
