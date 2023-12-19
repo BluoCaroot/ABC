@@ -34,14 +34,14 @@ for (let i = 0; i < 6; ++i)
     const rand = util.getRandomInt(0, 3)
     const tmp = map.filter((key)=>{return key.key==cat[rand]})
     const {value} = tmp[0]
-    if (value == url[4] && arr[i] == num)
+    if (value == url[5] && arr[i] == num)
     {
         i--
         continue
     }
     
     urll.push(`../../images/${value}/${arr[i]}.jpg`)
-    urll1.push(`../../../articles/${value}/${arr[i]}.html`)
+    urll1.push(`../../articles/${value}/${arr[i]}.html`)
     keys.push({key1: value, key2: arr[i]})
 
 }
