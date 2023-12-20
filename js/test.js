@@ -24,6 +24,7 @@ const map =
 const url = window.location.href.split('/')
 const file = url[url.length - 1]
 const num = file.split('.')[0]
+
         
 if (num != 'index')
 {
@@ -32,7 +33,7 @@ if (num != 'index')
     else
         document.title = num[0].toUpperCase() + num.substring(1)
 }
-if (num.length == 1)
+if (num.length == 1) //num.length == 1 indicates that the file is an article
 {
     util.shuffleArray(arr)
     const urll = [], urll1 = [], keys = []
