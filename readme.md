@@ -1,27 +1,9 @@
 # ABC
 
-assem - ayman design ksks
+During the fall semester of 2023 in the Foundations of Information Systemms course we were tasked with creating the front end for a news website and researching about roles of digital firms in informatiom systems and analyzing a datasheet using powerBI
 
-moataz - 7oka design aside
-
-amr => sport - political
-
-ramdan => health - tech
-
-deadline 13 / 12
-
-# Research
-## don't use Wikipedia
-
-each 2 topics (3 - 5) pages
-Introduction - Digital Firm - TPS - Conclusion - Presentation  => Moataz & 7oka
-MIS -  Enterprise applications => Assem
-ESS - DSS => Amr
-ERP - SCM => Ramadan
-CRM - KMS => Ayman
-
-# deadline 14 / 12
+We tried our best to build the website from scratch not using any templates and only getting inspiration from some active websites like BBC
 
 
 
-## [Presentation](https://www.canva.com/design/DAF3AK63JsU/Y1G7mCZ0_Fs1xsuTYw7tkQ/edit?utm_content=DAF3AK63JsU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+## [Link to the presentation](https://www.canva.com/design/DAF3AK63JsU/Y1G7mCZ0_Fs1xsuTYw7tkQ/edit?utm_content=DAF3AK63JsU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
