@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@font-face {
+    font-family: 'myfont';
+    src: url('../fonts/myFont.woff') format('woff');
+}
+
 :root {
     --font-family: 'Roboto', sans-serif;
     --news-color: #eb0000;
@@ -13,6 +18,26 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+}
+
+.orbit-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+.orbit-logo .span-logo {
+    width: 2rem;
+    height: 2rem;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.70rem;
+    font-family: 'myfont';
+    padding: 0.5rem;
 }
 
 body {
@@ -62,6 +87,7 @@ main {
     grid-template-areas: "article aside";
     grid-gap: 4vw;
 }
+
 main aside {
     grid-area: aside;
     order: 2;
@@ -100,6 +126,7 @@ main article div {
     margin-bottom: 20px;
     width: 90%;
 }
+
 .orbit-logo a svg path {
     fill: #000;
 }
@@ -211,7 +238,8 @@ main article div {
     height: 100%;
     cursor: pointer;
 }
-a{
+
+a {
     text-decoration: none;
 }
 
@@ -283,7 +311,6 @@ a{
 }
 
 
-.main-container-title-h2 span
-{
+.main-container-title-h2 span {
     position: relative;
 }

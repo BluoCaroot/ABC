@@ -37,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .orbit-logo .span-logo {
@@ -74,12 +74,11 @@ body {
     line-height: 1px;
     height: 100%;
     width: 85%;
-
 }
 
 .orbit-logo {
     order: -1;
-    margin-right: calc(1/8 * 1rem);
+    margin-right: 0.125rem;
 }
 
 .orbit-logo a {
@@ -87,21 +86,6 @@ body {
     position: relative;
     text-decoration: none;
     color: #212121;
-}
-
-.orbit-logo a svg {
-    width: 112;
-    height: 32;
-    fill: none;
-}
-
-.orbit-logo a svg :not(:root) {
-    overflow-clip-margin: content-box;
-    overflow: hidden;
-}
-
-.orbit-logo a svg path {
-    fill: #fff;
 }
 
 .orbit-nav-links {
