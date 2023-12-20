@@ -37,7 +37,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 0.5rem;
+    gap: calc(1/2 * 1rem);
 }
 
 .orbit-logo .span-logo {
